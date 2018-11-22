@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tables</title>
+    <style>
+        html, body {
+            width: 980px;
+            margin: 10px auto;
+            background: #ccf5b4;
+        }
+        table, th, td {
+            width: 60%;
+            font-family: sans-serif;
+            border: 2px solid purple;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 5px;
+        }
+        th, tfoot {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Training Details</caption>
+        <thead>
+            <th>#</th>
+          
+            <th>Tech</th>
+            <th>Client</th>
+            <th>Location</th>
+            <th colspan="2">Contact Details</th>
+            <th>Invoice value</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>HTML, CSS</td>
+                <td>Sapient</td>
+                <td>NCR</td>
+                <td>879696696</td>
+                <td>879696695</td>
+                <td>1000</td>
+            </tr>
+            <tr>
+                    <td>2</td>
+                    <td>Angular</td>
+                    <td>Sopra</td>
+                    <td>NCR</td>
+                    <td>879696696</td>
+                <td>879696695</td>
+                <td>4000</td>
+                </tr>
+                <tr>
+                        <td>3</td>
+                        <td>React</td>
+                        <td>Infosys</td>
+                        <td>Bangalore</td>
+                        <td>879696696</td>
+                        <td>879696695</td>
+                        <td>7000</td>
+                    </tr>
+                    <tr>
+                            <td>4</td>
+                            <td>HTML, CSS</td>
+                            <td>Ericsson</td>
+                            <td>Chennai</td>
+                            <td>879696696</td>
+                        <td>879696695</td>
+                        <td>1000</td>
+                        </tr>
+                        
+        </tbody>
+        <tfoot>
+                <tr>
+                        <td colspan="6">
+                            Total
+                        </td>
+                        <td>13000</td>
+                    </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nested Flex</title>
+    <style>
+        body {
+            margin: 0;
+            width: 70%;
+            max-width: 960px;
+            margin: 20px auto;
+        }
+        section {
+            display: flex;
+             
+        }
+        article {
+            display: flex;
+            border: 1px solid red;
+            border-radius: 20px;
+            flex: 200px;
+            margin: 20px;
+            flex-wrap: wrap;
+        }
+        div {
+            border: 2px solid green;
+             border-radius: 20px;
+             flex: 50px;
+             margin: 20px;
+             padding: 10px;
+             align-items: center;
+             justify-content: space-around;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <article>
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            
+        </article>
+        <article>
+            <div>A</div>
+            <div>B</div>
+        </article>
+        <article></article>
+    </section>
+</body>
+</html>

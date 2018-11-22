@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sapient Tours</title>
+    <style>
+        body{
+            background: whitesmoke;
+            width: 100%;
+            height: 1400px;
+            margin: 0 auto;
+        }
+        .nav-bar {
+            background: black;
+            color: white;
+            list-style-type: none;
+
+        }
+        h1 {
+            display: inline;
+            position: relative;
+            top: -8px;
+            left:10px;
+        }
+        nav {
+            position: sticky;
+        }
+        .nav-bar::after {
+            content: "";
+            clear: both;
+            display: block;
+        }
+        .nav-items {
+            float: left;
+            margin: 7px;
+            height: 25px;
+            padding: 5px;
+            width: 18%;
+        }
+        a{
+            color: white;
+            text-decoration: none;
+        }
+        /* .header {
+            position: sticky;
+        } */
+        .main {
+            float: left;
+            margin-right: 10px;
+            position: sticky;
+        }
+        /* p {
+            padding: 10px;
+        } */
+        main {
+            width: 80%;
+            margin: 0 auto;
+        }
+        article {
+            float: left;
+            width: 70%;
+        }
+        aside {
+            float: right;
+            width: 30%;
+        }
+        .image {
+            width: 100px;
+            height: 100px;
+        }
+        .img-grid {
+            list-style-type: none;
+        }
+        .img-list {
+            display: inline;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="images/logo.jpg" alt="logo" width="50px" height="50px">
+            <h1>Sapient Tours</h1>
+        </div>
+    
+        <nav>
+            <ul class="nav-bar">
+                <li class="nav-items">
+                    <a href="">Home</a>
+                </li>
+                <li class="nav-items">
+                    <a href="">Blog</a>
+                </li>
+                <li class="nav-items">
+                    <a href="">About us</a>
+                </li>
+                <li class="nav-items">
+                    <a href="">Our history</a>
+                </li>
+                <li class="nav-items">
+                    <a href="">Contacts</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+        <main>
+            <article>
+                <h1>
+                    An Exciting Blog Post
+                </h1>
+                <img src="images/balloon-sq6.jpg" alt="placeholder" width="250px" height="250px" class="main">
+                <p>Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi
+                    tomatillo melon
+                    azuki bean garlic.</p>
+    
+                <p>Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean
+                    collard greens
+                    dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
+    
+                <p>Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth water spinach
+                    avocado daikon
+                    napa cabbage asparagus winter purslane kale. Celery potato scallion desert raisin horseradish spinach
+                    carrot soko.
+                    Lotus root water spinach fennel kombu maize bamboo shoot green bean swiss chard seakale pumpkin onion
+                    chickpea gram
+                    corn pea. Brussels sprout coriander water chestnut gourd swiss chard wakame kohlrabi beetroot carrot
+                    watercress.
+                    Corn amaranth salsify bunya nuts nori azuki bean chickweed potato bell pepper artichoke.</p>
+    
+                <p>Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts
+                    black-eyed pea prairie
+                    turnip leek lentil turnip greens parsnip. Sea lettuce lettuce water chestnut eggplant winter purslane
+                    fennel azuki
+                    bean earthnut pea sierra leone bologi leek soko chicory celtuce parsley jícama salsify.</p>
+    
+                <p>Celery quandong swiss chard chicory earthnut pea potato. Salsify taro catsear garlic gram celery
+                    bitterleaf wattle
+                    seed collard greens nori. Grape wattle seed kombu beetroot horseradish carrot squash brussels sprout
+                    chard.</p>
+    
+            </article>
+    
+            <aside>
+                <h2>
+                    Photography
+                </h2>
+                <ul class="img-grid">
+                    <li class="img-list">
+                        <img src="images/balloon-sq1.jpg" alt="placeholder" class="image">
+                    </li>
+                    <li class="img-list">
+                        <img src="images/balloon-sq2.jpg" alt="placeholder" class="image">
+                    </li>
+                    <li class="img-list">
+                        <img src="images/balloon-sq3.jpg" alt="placeholder" class="image">
+                    </li>
+                    <li class="img-list">
+                        <img src="images/balloon-sq4.jpg" alt="placeholder"class="image">
+                    </li>
+                    <li class="img-list">
+                        <img src="images/balloon-sq5.jpg" alt="placeholder" class="image">
+                    </li>
+                </ul>
+    
+            </aside>
+        </main>
+    
+    </body>
+    
+    
+</html>

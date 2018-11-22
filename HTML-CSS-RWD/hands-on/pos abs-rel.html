@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Position relative-absolute</title>
+    <style>
+        .container {
+            width: 900px;
+            margin: 0 auto;
+            background-color: aliceblue;
+            height: 600px;
+            position: relative
+        }
+        .a, .b,.c,.d {
+            background: yellow;
+            width: 100px;
+            height: 100px;
+            position: absolute;
+        }
+        .b {
+            top:0;
+            right: 0;
+        }
+        .c {
+            bottom:0;
+            left:0;
+        }
+        .d {
+            bottom: 0;
+            right: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="a">
+            This is a box
+        </div>
+        <div class="b">
+                This is a box
+            </div>
+            <div class="c">
+                    This is a box
+                </div>
+                <div class="d">
+                        This is a box
+                    </div>
+    </div>
+</body>
+</html>

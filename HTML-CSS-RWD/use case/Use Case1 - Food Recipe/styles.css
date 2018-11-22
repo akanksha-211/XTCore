@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+/* Style sheet for Recipe Corner.
+
+This is for HTML-CSS assignment
+
+Copyright © 2018 Akanksha W (design)
+
+*/
+html, body {
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    background-color: #cfc;
+    /*width: 980px;
+    margin: 0 auto;*/
+    font: 100% Georgia, "Times New Roman", Times, serif;
+}
+.content{
+    background-color: hsla(141, 44%, 44%, 0.5);
+    width: 980px;
+    margin: 0 auto;
+    border: 5px solid;
+    padding: 2px;
+}
+h1, h2, h3, h4, h5, h6, p {
+    margin: 10px;
+}
+img {
+    float: left;
+}

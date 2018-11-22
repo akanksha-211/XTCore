@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Convert FD to Responsive</title>
+    <style>
+        html, body {
+            margin: 0;
+        }
+        #page {
+            width:70.27%;
+            /* 960/1366 = 0.702781, target = 960px & context = 1366px; */
+            /* width: 960px; */
+            margin: 0 auto;
+            text-align: center;
+            background: olivedrab
+        }
+        #page::after{
+            content: "";
+            clear: both;
+            display: block;
+        }
+        .blog-section {
+            margin: 0.8%;
+            /* 4px/500px = 0.008*/
+            padding: 0.02%;
+            /* 10px/500px = 0.02 */
+        }
+        .main {
+            width: 58.95%;
+            /* 566/960 = 0.589583, target = 566px & context = 960px; */
+            background: #577CDA;
+            /* width: 566px; */
+            
+        }
+        .other {
+            width: 41%;
+            /* 394/960 = 0.410416, target = 394px & context = 960px; */
+            /* width: 394px; */
+            background: #F256DE;
+        }
+        .main, .other {
+            float: left;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div id="page">
+        <div class="blog-section">
+            <h1>
+                Recently in <a href="#">The Bot Blog</a>
+            </h1>
+            <div class="main">
+                main content
+            </div>
+            <div class="other">
+                other
+            </div>
+        </div>
+    </div>
+</body>
+</html>
