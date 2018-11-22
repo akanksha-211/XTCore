@@ -1,0 +1,22 @@
+.wrapper {
+    border: 1px solid black;
+    width: 300px;
+    background: whitesmoke;
+}
+h1{
+    text-align: right;
+}
+article {
+        /* background: aqua; */
+        border: 1px solid grey;
+        /* border-radius: 20px;
+        padding: 10px;
+        margin: 10px; */
+        flex: 60px;
+        text-align: center;
+    }
+    section {
+        display: flex;
+        flex-wrap: wrap
+        /* flex-direction: row-reverse */
+    }
