@@ -1,0 +1,50 @@
+html, body {
+    width: 980px;
+    margin: 10px auto;
+    /* background: #ccf5b4; */
+}
+table {
+    border: 5px solid black !important;
+}
+table, th, td {
+    /* width: 80%; */
+    font-family: sans-serif;
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px;
+}
+th, tfoot, td {
+    text-align: center;
+}
+thead td {
+    background: orange;
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 1.5em;
+}
+tbody tr:first-child, tbody tr td:first-child{
+    background: yellow;
+}
+.head-row td, tbody tr td:first-child, .desc{
+    font-weight: bold;
+}
+.head-row td span, .sub{ 
+    font-weight: 200;
+    font-style: italic;
+}
+.temp {
+    color: red;
+    font-weight: bold;
+}
+.desc, .sub {
+    display: block;
+}
+tbody tr td:last-child {
+    text-align: left;
+}
+tbody tr:first-child td {
+    text-align: center;
+}
