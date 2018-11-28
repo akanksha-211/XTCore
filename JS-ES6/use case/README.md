@@ -8,3 +8,6 @@ Console calculator to capture core Javascript concepts such as variables, litera
 
 ### 2. UC2-> Login
 Test Login using javascript function scope, resolve and reject and Promise
+
+### 2. UC3-> ToDo List
+Create ToDo list and add generic functions using JS Arrays and concept of Objects
