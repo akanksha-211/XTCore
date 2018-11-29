@@ -9,5 +9,8 @@ Console calculator to capture core Javascript concepts such as variables, litera
 ### 2. UC2-> Login
 Test Login using javascript function scope, resolve and reject and Promise
 
-### 2. UC3-> ToDo List
+### 3. UC3-> ToDo List
 Create ToDo list and add generic functions using JS Arrays and concept of Objects
+
+### 4. UC4-> Check Cache
+Check if a particular data is available in cache or not, if yes - return from cache, else add to the cache
