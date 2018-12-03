@@ -14,3 +14,8 @@ Create ToDo list and add generic functions using JS Arrays and concept of Object
 
 ### 4. UC4-> Check Cache
 Check if a particular data is available in cache or not, if yes - return from cache, else add to the cache
+
+### 5. UC5-> Fetch
+Fetch details of listed Github user
+
+### 6. UC6-> Fetch using async

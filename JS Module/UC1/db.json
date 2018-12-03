@@ -1,0 +1,43 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": [
+    {
+      "id": 1,
+      "name": "akanksha",
+      "city": "delhi"
+    },
+    {
+      "id": 2,
+      "name": "wadhwa",
+      "city": "mumbai"
+    },
+    {
+      "id": 865,
+      "name": "new name",
+      "city": "city"
+    },
+    {
+      "id": 897,
+      "name": "name1",
+      "city": "city2"
+    },
+    {
+      "id": 86,
+      "name": "name",
+      "city": "city"
+    }
+  ]
+}
