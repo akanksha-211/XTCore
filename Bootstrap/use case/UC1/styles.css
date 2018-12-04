@@ -1,0 +1,43 @@
+body{
+    background: whitesmoke;
+    width: 100%;
+    margin: 0 auto;
+}
+.nav-bar {
+    list-style-type: none;
+}
+.heading1 {
+    left:10px;
+}
+nav {
+    top:0%;
+    left: 0;
+}
+
+.nav-items {
+    margin: 7px;
+    padding: 5px;
+}
+a{
+    text-decoration: none !important;
+}
+
+.main {
+    margin-right: 10px;
+    position: sticky;
+}
+
+main {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.image {
+    width: 100px;
+    height: 100px;
+    margin-top: 5px;
+}
+.img-grid {
+    list-style-type: none;
+    padding-inline-start: 0 !important;
+}
