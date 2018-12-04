@@ -91,22 +91,9 @@
   !*** ./src/index.js ***!
   \**********************/
 /*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports) {
 
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _mylib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./mylib */ \"./src/mylib.js\");\n\r\n\r\nconsole.log(_mylib__WEBPACK_IMPORTED_MODULE_0__[\"name\"], _mylib__WEBPACK_IMPORTED_MODULE_0__[\"id\"], _mylib__WEBPACK_IMPORTED_MODULE_0__[\"isActive\"], Object(_mylib__WEBPACK_IMPORTED_MODULE_0__[\"sayHello\"])());\n\n//# sourceURL=webpack:///./src/index.js?");
-
-/***/ }),
-
-/***/ "./src/mylib.js":
-/*!**********************!*\
-  !*** ./src/mylib.js ***!
-  \**********************/
-/*! exports provided: name, id, isActive, sayHello */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"name\", function() { return name; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"id\", function() { return id; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"isActive\", function() { return isActive; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"sayHello\", function() { return sayHello; });\n// export const name = 'Akanksha';\r\n// export const id =1;\r\n// export const isActive = true;\r\n// export const sayHello = _ =>  'Hello';\r\n\r\n\r\n// OR\r\n\r\nconst name = 'Akanksha';\r\nconst id =1;\r\nconst isActive = true;\r\nconst sayHello = _ =>  'Hello';\r\n\r\n\r\n\r\n\n\n//# sourceURL=webpack:///./src/mylib.js?");
+eval("throw new Error(\"Module build failed: Error: ENOENT: no such file or directory, open 'D:\\\\Akanksha Imp\\\\CoreXT Training\\\\XTCore\\\\JS Module\\\\hands on\\\\ES6 module\\\\src\\\\index.js'\");\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ })
 

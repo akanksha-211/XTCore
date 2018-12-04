@@ -11,10 +11,17 @@ const id =1;
 const isActive = true;
 const sayHello = _ =>  'Hello';
 
+class Greeter {
+    constructor(){
+        console.log('Welcome Greeter!');
+    }
+}
+
 export {
     name,
     id,
     isActive,
-    sayHello
+    sayHello,
+    Greeter
 }
 
