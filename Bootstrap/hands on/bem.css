@@ -1,0 +1,39 @@
+
+/* Block */
+ul {
+    list-style-type: disc;
+    background: whitesmoke !important;
+}
+.btn {
+    text-decoration: none;
+    background: white;
+    color: #888;
+    border-radius: 5px;
+    margin: 10px;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 10px 5px;
+}
+/* Element */
+li {
+    color: darkmagenta;
+}
+.btn__text {
+    padding: 0 10px;
+    border-radius: 0 5px 5px 0;
+}
+/* Modifier */
+li h3:hover {
+    color: brown;
+}
+.btn--big {
+    font-size: 28px;
+    padding: 10px;
+    font-weight: 400;
+}
+.btn--orange {
+    border-color: #ff4136;
+    color: white;
+    background: #ff4136;
+}
