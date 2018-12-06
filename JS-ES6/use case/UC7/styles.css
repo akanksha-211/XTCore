@@ -1,0 +1,32 @@
+
+.header {
+    color: #36A0FF;
+    font-size: 27px;
+    padding: 10px;
+}
+
+input:focus:invalid {
+    border: 2px dashed red;
+}
+input.error {
+    border: 2px dashed red;
+}
+.error-block {
+    background: red;
+    border-radius: 10px;
+    box-sizing: content-box;
+    position: relative;
+    top: -5px;
+    left: 0;
+    padding-left: 10px;
+    visibility: hidden;
+}
+em {
+    font-size: 1em;
+    color: white;
+    font-style: italic;
+}
+
+
+
+
