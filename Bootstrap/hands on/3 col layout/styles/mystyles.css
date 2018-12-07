@@ -1,0 +1,39 @@
+header {
+  background: purple;
+}
+
+h1 {
+  text-align: center;
+  color: #fff;
+  line-height: 100px;
+  margin: 0;
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+article {
+  background: aqua;
+  border: 1px solid aliceblue;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 10px;
+  flex: 200px;
+  flex-direction: column;
+}
+
+article.second {
+  color: #fff;
+}
+
+article.second h2:hover {
+  color: purple;
+}
+
+body {
+  margin: 0;
+}
+
+/*# sourceMappingURL=mystyles.css.map */

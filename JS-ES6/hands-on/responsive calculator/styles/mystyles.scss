@@ -1,0 +1,51 @@
+@import 'colors.scss';
+
+body {
+    width: 50%;
+    margin: 20px auto;
+}
+h1{
+    text-align: center;
+}
+.wrapper {
+    border: 1px solid $black;
+    width: 300px;
+    background: $whitesmoke;
+    margin: 0 auto;
+    border-radius: 5px;
+    box-shadow: 10px 5px $lightgrey;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap
+}
+article {
+    border: 1px solid $grey;
+    border-radius: 10px;
+    margin: 5px;
+    flex: 60px;
+    text-align: center;
+}
+input {
+    width: 95%;
+    height: 50px;
+    text-align: right;
+    padding-right: 11px;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+button {
+    padding: 15px;
+    background: transparent;
+    border: none;
+    -webkit-appearance: menulist-text;
+}
+
+.resetBlock {
+    background: $skyblue;
+}
+.notSuppBlock {
+    background: $blackishred;
+}
+    

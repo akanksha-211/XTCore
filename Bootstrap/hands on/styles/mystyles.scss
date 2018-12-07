@@ -1,0 +1,90 @@
+$snow: #FFFAFA;
+$font-stack: Helvetica, sans-serif;
+$text-align: center;
+$width: 5em;
+
+@import './_reset.scss';
+
+body {
+    background: snow;
+    font: 100% $font-stack;
+    text-align: $text-align;
+}
+
+#main {
+    $width: 10em;
+    width: $width;
+    margin: round(4.5px)/2 8px+2px;
+}
+
+#side {
+    width: $width;
+}
+// Strings
+span {
+    content: 'hello' + 'world';
+}
+// Directives
+$age: 20;
+.bool {
+    @if ($age > 10 and $age <25) {
+        color: green;
+    }
+}
+// Interpolations
+$name: foo;
+$attr: border;
+
+p.#{$name} {
+    #{$attr}-color: blue;
+}
+
+// Default values
+$ontent: 'First content';
+$content: 'Second content!';
+$new_content: 'First reference!' !default;
+
+#main {
+    content: $content;
+    content: $new_content;
+}
+
+@for $i from 1 through 3 {
+    .item-#{$i} {
+        width: 2em *$i;
+    }
+}
+
+// Mixin
+@mixin transform($property) {
+    -webkit-transform: $property;
+    -ms-transform: $property;
+    transform: $property;
+}
+
+@mixin color($text, $bg, $border) {
+    color: $text;
+    background: $bg;
+    border: $border;
+}
+.box {
+    @include transform((rotate(30deg)));
+    @include color(white, red , crimson );
+}
+
+
+// Inheritance
+%message-shared {
+    border: 1px solid #ccc;
+    padding: 10px;
+    color: #333;
+}
+
+.message {
+    @extend %message-shared;
+}
+.warning {
+    @extend %message-shared;
+    color: red;
+    font-size: 10px;
+}

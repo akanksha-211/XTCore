@@ -1,0 +1,65 @@
+body {
+  background: snow;
+  font: 100% Helvetica, sans-serif;
+  text-align: center;
+}
+
+#main {
+  width: 10em;
+  margin: 2.5px 10px;
+}
+
+#side {
+  width: 5em;
+}
+
+span {
+  content: "helloworld";
+}
+
+.bool {
+  color: green;
+}
+
+p.foo {
+  border-color: blue;
+}
+
+#main {
+  content: "Second content!";
+  content: "First reference!";
+}
+
+.item-1 {
+  width: 2em;
+}
+
+.item-2 {
+  width: 4em;
+}
+
+.item-3 {
+  width: 6em;
+}
+
+.box {
+  -webkit-transform: rotate(30deg);
+  -ms-transform: rotate(30deg);
+  transform: rotate(30deg);
+  color: white;
+  background: red;
+  border: crimson;
+}
+
+.warning, .message {
+  border: 1px solid #ccc;
+  padding: 10px;
+  color: #333;
+}
+
+.warning {
+  color: red;
+  font-size: 10px;
+}
+
+/*# sourceMappingURL=mystyles.css.map */

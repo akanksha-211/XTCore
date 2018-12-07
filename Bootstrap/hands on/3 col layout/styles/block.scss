@@ -1,0 +1,26 @@
+@import 'constants.scss';
+
+// Block
+section {
+    display: flex;
+    flex-wrap: wrap
+}
+
+article {
+    background: $aqua;
+    border: 1px solid $aliceblue;
+    border-radius: 20px;
+    padding: $ten-px;
+    margin: $ten-px;
+    flex: $twohund-px;
+    flex-direction: column;
+}
+
+article.second {
+    color: $white;
+}
+
+article.second h2:hover {
+    color: $purple;
+    
+}

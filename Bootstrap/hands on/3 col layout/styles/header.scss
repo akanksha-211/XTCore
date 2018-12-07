@@ -1,0 +1,14 @@
+@import 'constants.scss';
+header {
+    background: $purple;
+}
+@mixin head($line-height, $margin) {
+    line-height: $line-height;
+    margin: $margin;
+
+}
+h1 {
+    text-align: $text-align;
+    color: $white;
+    @include head(100px, 0);
+}
