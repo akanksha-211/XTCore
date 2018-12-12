@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <script src="bundle.js"></script>
+    <title>Money Dispnser</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h2>
+                ATM Money Dispenser
+            </h2>
+        </header>
+        <main>
+            <div class="row">
+                <div class="col">
+                    <section class="left">
+                        <div class="container">
+                            <h2>Welcome to ATM</h2>
+                            <div class="form-group">
+                                <label for="amount" class="label1">
+                                    Enter the Amount
+                                </label>
+                                <input id="amount" type="text" class="form-field input" pattern="[0-9]{1,6}" maxlength="6" value="">
+                            </div>
+                            <div class="form-group">
+                                <button id="button" type="button" class="btn btn-primary" disabled>Get Money</button>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div class="col">
+                    <section class="right">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <td colspan="2">You will get following amount</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <span class="1">0</span>
+                                            notes of Rs 1
+                                    </td>
+                                    <td>
+                                        <span class="2">0</span>
+                                            notes of Rs 2
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="5">0</span>
+                                            notes of Rs 5
+                                    </td>
+                                    <td>
+                                        <span class="10">0</span>
+                                            notes of Rs 10
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="20">0</span>
+                                            notes of Rs 20
+                                    </td>
+                                    <td>
+                                        <span class="50">0</span>
+                                            notes of Rs 50
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="100">0</span>
+                                            notes of Rs 100
+                                    </td>
+                                    <td>
+                                        <span class="200">0</span>
+                                            notes of Rs 200
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="500">0</span>
+                                            notes of Rs 500
+                                    </td>
+                                    <td>
+                                        <span class="2000">0</span>
+                                            notes of Rs 2000
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td colspan="2">
+                                        <strong>Total notes dispensed: <span class="total">0</span></strong>
+                                    </td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </section>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

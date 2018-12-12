@@ -1,0 +1,95 @@
+@import 'colors.scss';
+html, body{
+    margin:0;
+}
+
+body{
+    width: 50%;
+    margin: 0 auto;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+.header{
+    background: $purple-grey;
+    color: $white;
+    text-align: center;
+    height: 150px;
+}
+.header h2{
+    padding: 2.5em;
+}
+main {
+    margin-top: 1em;
+    background: $lightgrey;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.col {
+    width: 50%;
+}
+section {
+    width: 90%;
+    margin: 10px auto;
+}
+.left {
+    background: $white;
+}
+.left .container {
+    border: 2px solid $grey2;
+    padding: 1em 2em;
+}
+.left h2 {
+    text-align: center;
+}
+.label1 {
+    font-size: x-small;
+    display: block;
+}
+input, button {
+    margin-top: 1em;
+    width: 100%;
+    height: 40px;
+}
+.form-field.input {
+    border: 1px solid $grey2;
+    border-radius: 5px;
+    text-align: right;
+}
+input:focus {
+    outline: none;
+}
+.input:invalid{
+    border: 1px solid $red;
+}
+.btn.btn-primary {
+    background: $blue1;
+    color: $white;
+    border: none;
+}
+button:disabled {
+    background: $disabledBlue !important;
+}
+table {
+    width: 100%;
+}
+thead td {
+    font-weight: bold;
+}
+td {
+    border-bottom: 1px solid $grey1;
+    line-height: 1.75em;
+}
+td span:nth-child(2) {
+    margin-left: 4em;
+}
+@media (max-width: 768px) {
+    .col {
+        width: 100%;
+    }
+}
+@media (min-width:769px) and (max-width: 1200px) {
+    td {
+        line-height: 1em !important;
+    }        
+}
