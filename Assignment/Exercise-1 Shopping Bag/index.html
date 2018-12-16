@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Shopping Cart</title>
     <link rel="stylesheet" href="assets/styles/styles.css">
+    <script src="dist/bundle.js"></script>
 </head>
 <body>
     <div class="container">
@@ -29,31 +30,6 @@
         <main>
             <div class="content">
                 <section class="item-list">
-                    <div class="item">
-                        <div class="item-image">
-                            <img alt="red t-shirt" src="assets/images/red t-shirt image-1.jpg" height="175" width="150">
-                        </div>
-                        <div class="description">
-                            <div class="item-desc">
-                                <p>
-                                    <strong>SOLID RED COTTON T-SHIRT</strong>
-                                </p>
-                                <p>Style #: RS6789HTY</p>
-                                <p>Colour: Red</p>  
-                            </div>
-                            <div class="item-size">
-                                <label class="size-label">SIZE:</label>
-                                S
-                            </div>
-                            <div class="item-qty">
-                                <label class="qty-label">QTY:</label>
-                                <input type="text" value="1">
-                            </div>
-                            <div class="item-price">
-                                $11.00
-                            </div>
-                        </div>  
-                    </div>
                 </section>
                 <section class="billing">
                     <aside>
@@ -91,7 +67,7 @@
                                        <p><strong>SUBTOTAL</strong></p>
                                     </td>
                                     <td>
-                                       <p><strong>$37.00</strong></p>
+                                       <p><strong class="estPrice">$37.00</strong></p>
                                     </td>
                                 </tr>
                                 <tr>
@@ -125,7 +101,7 @@
                                         </p>
                                     </td>
                                     <td>
-                                        <p><strong>-$7.00</strong></p>
+                                        <p><strong class="totalPrice">-$7.00</strong></p>
                                     </td>
                                 </tr>
                             </tbody>
@@ -144,6 +120,58 @@
                 </section>
             </div>
         </main>
+        <div id="overlay">
+            
+            <div class="overlayContainer">
+                <input type="hidden" class="hiddenAttr" value=""/>
+                <div class="closeButton">
+                    <a href="#" class="close">X</a>
+                </div>
+                <div class="overlayContent">
+                    <div class="left">
+                        <div class="editDesc">
+                            RED T-SHIRT
+                        </div>
+                        <div class="editPrice">
+                            $
+                            <span class="amount">21.00</span>
+                        </div>
+                        <div class="editcolour">
+                            RED
+                        </div>
+                        <div class="edit">
+                            <select class="sizeList">
+                                <option value="0">SIZE</option>
+                                <option value="S">S</option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                                <option value="XL">XL</option>
+                            </select>
+                            <select class="qtyList">
+                                <option value="0">QTY</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                            </select>
+                        </div>
+                        <div class="editButton">
+                            <button type="button" class="button primary" id="editButton">EDIT</button>
+                        </div>
+                        <div class="editOtherLinks">
+                            <a href="#">See Product Details</a>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <img class="editImage" src="assets/images/red t-shirt image-1.jpg" height="300" width="80%">
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>

@@ -1,0 +1,34 @@
+{
+  "item": [
+    {
+      "id": 1,
+      "src": "file:///D:/Akanksha%20Imp/CoreXT%20Training/XTCore/Assignment/Exercise-1%20Shopping%20Bag/assets/images/red%20t-shirt%20image-1.jpg",
+      "desc": "SOLID RED COTTON T-SHIRT",
+      "style": "RDF520HD",
+      "colour": "RED\n",
+      "size": "L",
+      "quantity": "1",
+      "price": 14
+    },
+    {
+      "id": 2,
+      "src": "file:///D:/Akanksha%20Imp/CoreXT%20Training/XTCore/Assignment/Exercise-1%20Shopping%20Bag/assets/images/black%20t-shirt%20image-1.jpg",
+      "desc": "BLACK COTTON T-SHIRT",
+      "style": "BLK7856PO",
+      "colour": "BLACK\n",
+      "size": "XL",
+      "quantity": "1",
+      "price": 37
+    },
+    {
+      "id": 3,
+      "src": "file:///D:/Akanksha%20Imp/CoreXT%20Training/XTCore/Assignment/Exercise-1%20Shopping%20Bag/assets/images/gap%20olive%20green%20leggings%20image-1.jpg",
+      "desc": "OLIVE GREEN LEGGINGS",
+      "style": "OLG563GB",
+      "colour": "OLIVEGREEN\n",
+      "size": "S",
+      "quantity": "2",
+      "price": 40
+    }
+  ]
+}

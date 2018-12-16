@@ -1,0 +1,12 @@
+{
+  "name": "shopping-cart",
+  "version": "1.0.0",
+  "description": "This execrise is for a shopping Bag",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "",
+    "build": "sass ./assets/styles/styles.scss ./assets/styles/styles.css"
+  },
+  "author": "Akanksha Wadhwa",
+  "license": "ISC"
+}

@@ -1,10 +1,13 @@
 body {
   margin: 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-size: 0.75em;
 }
 
 .container {
   width: 98%;
   margin: 0 auto;
+  color: #6B6D71;
 }
 
 .container header {
@@ -35,7 +38,6 @@ body {
 }
 
 .item {
-  border-bottom: 1px solid #d8d8d8;
   padding: 10px;
 }
 
@@ -65,14 +67,24 @@ body {
   margin-block-end: 0;
 }
 
-.item-desc .links ul {
+.links {
+  border-bottom: 1px solid #d8d8d8;
+}
+
+.links ul {
   list-style-type: none;
   padding-inline-start: 0;
   margin-block-start: 0;
 }
 
-.item-desc .links ul li {
+.links ul li {
   display: inline;
+  padding: 0 1em;
+  border-right: 1px solid #d8d8d8;
+}
+
+.links ul li:nth-child(3) {
+  border: none;
 }
 
 .item-qty {
@@ -156,6 +168,87 @@ table tr:nth-child(3) {
   text-align: center;
 }
 
+#overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  cursor: pointer;
+}
+
+.overlayContainer {
+  width: 90%;
+  margin: 1em auto;
+  background: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.overlayContent {
+  display: flex;
+}
+
+.closeButton {
+  font-size: 1.5em;
+  text-align: right;
+  padding-right: 1em;
+}
+
+.closeButton a {
+  text-decoration: none;
+}
+
+.left, .right {
+  flex: 200px;
+  width: 80%;
+  margin: 2em auto;
+  text-align: center;
+}
+
+.editDesc {
+  border-top: 5px solid #d8d8d8;
+  padding-top: 1em;
+}
+
+.editDesc, .editPrice, .editcolour, .edit, .editButton, .editOtherLinks {
+  width: 50%;
+  margin: 1em auto;
+}
+
+.editPrice {
+  font-size: 2em;
+  color: black;
+}
+
+.editcolour div {
+  height: 10px;
+  width: 2.5%;
+  margin: 0.25em auto;
+}
+
+.edit .sizeList, .edit .qtyList {
+  height: 35px;
+  padding: 0.5em;
+  background: transparent;
+}
+
+.editButton button {
+  width: 50%;
+  height: 50px;
+  color: white;
+  background: #3A72E3;
+  border: none;
+}
+
 @media (min-width: 600px) {
   .container h2 {
     display: block;
@@ -180,7 +273,6 @@ table tr:nth-child(3) {
 
   .item {
     display: flex;
-    border-bottom: 1px solid #d8d8d8;
     padding: 10px;
   }
 

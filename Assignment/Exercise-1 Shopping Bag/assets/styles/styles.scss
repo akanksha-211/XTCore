@@ -1,39 +1,38 @@
+@import './colors.scss';
+
 body {
     margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 0.75em;
 }
 
 .container {
     width: 98%;
     margin: 0 auto;
+    color: $grey2;
 }
 .container header {
-    border-bottom: 2px solid #d8d8d8;
+    border-bottom: 2px solid $grey1;
 }
 .container h2 {
     text-align: center;
     display: inline;
 }
 .content-header {
-    // border-top: 1px solid #d8d8d8;
     margin-top: 0.25em;
     float: right;
-    // padding: 10px;
 }
 .item-list {
-    border-bottom: 2px solid #d8d8d8;
+    border-bottom: 2px solid $grey1;
 }
 .noOfItem {
-    // flex: 70%;
     display: inline;
 }
 .size, .qty, .price{
     flex: 10%;
     visibility: hidden;
-    // display: none;
 }
 .item {
-    // display: flex;
-    border-bottom: 1px solid #d8d8d8;
     padding: 10px;
 }
 .item::after {
@@ -42,16 +41,11 @@ body {
     display: block;
 }
 .item-image {
-    // flex: 50%
     float: left;
-    // display: inline;
 }
 .description {
-    // flex: 50%;
-    // display: inline;
     float: right;
     width: 150px;
-    // margin-left: 1em;
     display: flex;
     flex-wrap: wrap;
 }
@@ -63,13 +57,22 @@ body {
     margin-block-start: 0;
     margin-block-end: 0;
 }
-.item-desc .links ul {
+.links {
+    border-bottom: 1px solid $grey1;
+}
+.links ul {
     list-style-type: none;
     padding-inline-start: 0;
     margin-block-start: 0;
+    
 }
-.item-desc .links ul li {
+.links ul li {
     display: inline;
+    padding: 0 1em;
+    border-right: 1px solid $grey1;
+}
+.links ul li:nth-child(3) {
+    border: none;
 }
 .item-qty {
     margin: 1em 0;
@@ -93,36 +96,34 @@ body {
 .promo {
     text-align: center;
     padding: 1em;
-    border-bottom: 1px solid #d8d8d8;
+    border-bottom: 1px solid $grey1;
     display: flex;
     flex-wrap: wrap;
 }
 .promoLabel,.form-group {
     flex: 300px;
 }
-.form-group {
-    // padding-top: 1em;
-}
+
 .form-group .form-field {
     height: 35px;
     
 }
 .form-field.input {
-    border: 1px solid #d8d8d8;
+    border: 1px solid $grey1;
     padding: 0;
 }
 .form-field.button {
-    background: white;
+    background: $white;
     padding: 0 3em;
-    border: 1px solid #c0c0c0;
+    border: 1px solid $grey3;
 }
 table {
     width: 80%;
     margin: 0 auto;
-    border-bottom: 2px solid #d8d8d8;
+    border-bottom: 2px solid $grey1;
 }
 table tr:nth-child(3) {
-    border-bottom: 1px solid #d8d8d8;
+    border-bottom: 1px solid $grey1;
 }
 .checkout {
     padding: 1em;
@@ -133,8 +134,8 @@ table tr:nth-child(3) {
 .checkout button {
     width: 100%;
     height: 50px;
-    color: white;
-    background: #3A72E3;
+    color: $white;
+    background: $blue1;
     border: none;
 }
 .checkout .link {
@@ -142,12 +143,81 @@ table tr:nth-child(3) {
     margin: 1em auto;
     text-align: center;
 }
+#overlay {
+    position: fixed; 
+    display: none; 
+    width: 100%; 
+    height: 100%; 
+    top: 0; 
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); 
+    z-index: 2; 
+    cursor: pointer; 
+}
+.overlayContainer {
+    width: 90%;
+    margin: 1em auto;
+    background: $white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+}
+.overlayContent {
+    display: flex;
+}
+.closeButton {
+    font-size: 1.5em;
+    text-align: right;
+    padding-right: 1em;
+}
+.closeButton a{
+    text-decoration: none;
+}
+.left, .right {
+    flex: 200px;
+    width: 80%;
+    margin: 2em auto;
+    text-align: center;
+}
+.editDesc {
+    border-top: 5px solid $grey1;
+    padding-top : 1em;
+}
+.editDesc, .editPrice, .editcolour, .edit, .editButton, .editOtherLinks {
+    width: 50%;
+    margin: 1em auto;
+}
+.editPrice {
+    font-size: 2em;
+    color: $black;
+}
+.editcolour div {
+    height: 10px; 
+    width: 2.5%;
+    margin: 0.25em auto;
+}
+.edit .sizeList, .edit .qtyList {
+    height: 35px;
+    padding: 0.5em;
+    background: transparent;
+}
+.editButton button {
+    width: 50%;
+    height: 50px;
+    color: $white;
+    background: $blue1;
+    border: none;
+}
 @media (min-width: 600px) {
     .container h2 {
         display: block;
     }
     .content-header {
-        border-top: 1px solid #d8d8d8;
+        border-top: 1px solid $grey1;
         display: flex;
         padding: 10px;
         margin-top: 0;
@@ -159,11 +229,9 @@ table tr:nth-child(3) {
     .size, .qty, .price{
         flex: 10%;
         visibility: visible;
-        // text-align: right;
     }   
     .item {
         display: flex;
-        border-bottom: 1px solid #d8d8d8;
         padding: 10px;
     }
     .item-image {
@@ -183,7 +251,6 @@ table tr:nth-child(3) {
         flex: 10%;
     }
     .item-size label, .item-qty label {
-        // visibility: hidden;
         display: none;
     }
     .billing aside {
@@ -206,12 +273,10 @@ table tr:nth-child(3) {
         // width: 80%;
         margin-left: 5em;
     }
-    .form-field.form-field.input {
-        // width: 20%;
-    }
+    
     table {
-        border-bottom: 5px solid #d8d8d8;
-        border-top: 5px solid #d8d8d8;
+        border-bottom: 5px solid $grey1;
+        border-top: 5px solid $grey1;
     }
     .checkout {
         display: flex;
