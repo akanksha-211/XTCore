@@ -5,7 +5,7 @@ const ORDERS = [{
     {
         orderId: 2,
         value: 1200
-    },
+    }
 ];
 
 const addOrder = function(id, value) {
