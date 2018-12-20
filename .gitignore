@@ -5,4 +5,3 @@
 # ignore text files
 **/*.txt
 node-app/use case/UC2
-node-app/use case/UC3
