@@ -4,4 +4,3 @@
 **/node_modules
 # ignore text files
 **/*.txt
-node-app/use case/UC2
